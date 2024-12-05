@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/papercss@1.9.2/dist/paper.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <nav class="border fixed split-nav">
+      <div class="nav-brand">
+        <h3 class="tituloNav"><a href="#">Continuidad de los Parques</a></h3>
+      </div>
+      <div class="collapsible">
+        <input id="collapsible1" type="checkbox" name="collapsible1" />
+        <label for="collapsible1">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </label>
+        <div class="collapsible-body">
+          <ul class="inline">
+            <li><a href="#historia">Historia</a></li>
+            <li><a href="#juego">Juego</a></li>
+            <li><a href="#proceso">Proceso</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="paper container">
+      <div class="imagencontenedor">
+        <img class="imginicio" src="images/fotoInicio.jpeg" alt="" />
+      </div>
+      <div>
+        <p>
+          "Continuidad de los parques" de Julio Cortázar cuenta cómo un hombre
+          se sumerge en la lectura de una novela. La trama de la historia relata
+          un plan de asesinato, y al final, se revela que el lector es parte de
+          la misma ficción que está leyendo, fundiendo realidad y ficción de
+          manera impactante.
+        </p>
+      </div>
+      <div class="col-12 col">
+        <a
+          href="https://www.ucm.es/data/cont/docs/119-2014-02-19-Cortazar.ContinuidadDeLosParques.pdf"
+          target="_blank"
+          ><button class="btn-block">Libro Web</button></a
+        >
+      </div>
+    </div>
+
+    <div class="row flex-center" id="historia">
+      <div class="card" style="width: 500">
+        <div class="card-body">
+          <h4 class="card-title">Historia interactiva!!!</h4>
+          <p class="card-text">Descubri todos los caminos posibles...</p>
+        </div>
+        <iframe
+          src="tpfinalparte1/index.html"
+          frameborder="0"
+          width="640"
+          height="484"
+        ></iframe>
+      </div>
+    </div>
+      <div class="row flex-spaces child-borders">
+        <label class="paper-btn margin" for="modal-1">Diagrama de Flujo</label>
+      </div>
+      <input class="modal-state" id="modal-1" type="checkbox">
+      <div class="modal">
+        <label class="modal-bg" for="modal-1"></label>
+        <div class="modal-body">
+          <label class="btn-close" for="modal-1">X</label>
+          <h4 class="modal-title">Diagrama de Flujo Continuidad De Los Parques</h4>
+          <img class="imgdia" src="images/diagrama.jpg" alt="">
+        </div>
+      </div>
+
+    <div class="row flex-center" id="juego">
+      <h2 class="col">Juego</h2>
+    </div>
+    <div class="row flex-center">
+      <p class="col sm-6">
+        En nuestro proyecto sobre Continuidad de los parques, creamos un juego
+        interactivo inspirado en la historia de Julio Cortázar. En él, el
+        jugador se pone en el lugar del protagonista y debe esquivar cuchillos
+        mientras experimenta la tensión del relato. Una forma diferente de
+        explorar este clásico literario.
+      </p>
+    </div>
+    <div class="row flex-center">
+      <div class="col">
+        <iframe
+          src="tpfinalparte2/index.html"
+          frameborder="0"
+          width="640"
+          height="500"
+        ></iframe>
+      </div>
+    </div>
+
+    <div id="proceso" class="row flex-center">
+      <h2 class="col">Proceso</h2>
+    </div>
+    <div id="proceso" class="row flex-center">
+      <div class="col sm-6 border border-4">
+        <p>
+          Para organizar el proyecto, creamos una clase principal llamada
+          ControladorDeJuego, donde agrupamos cuatro clases principales,
+          incluida Cuchillo, para mantener el código limpio y estructurado.
+          Dentro de esta clase, diseñamos otra llamada Main para gestionar todo,
+          y en otro archivo, llamamos a Main desde el setup y el draw con una
+          sola línea de código. La clase Cuchillo utiliza valores aleatorios con
+          random() para definir posiciones, velocidades y direcciones
+          impredecibles. Los cuchillos aparecen desde los bordes y se mueven
+          hacia el centro con diferentes ángulos, haciendo el juego más dinámico
+          y desafiante.
+        </p>
+      </div>
+    </div>
+    <div id="proceso" class="row flex-center">
+      <div class="card" style="width: 20rem">
+        <div class="card-body">
+          <h4 class="card-title">Primera idea del juego</h4>
+        </div>
+        <img
+          class="image-bottom"
+          src="images/ideaJuego.png"
+          alt="Card example image"
+        />
+      </div>
+    </div>
+
+    <div class="containerFlecha">
+      <a href="#" class="paper-btn sm-4 flecha"
+        ><img src="images/flechaUpW.png" class="no-border"
+      /></a>
+    </div>
+
+    <footer>
+      <ul class="breadcrumb border">
+        <li>Juan Lahue</li>
+        <li>Alex Palomeque</li>
+        <li>PMIW</li>
+      </ul>
+    </footer>
+  </body>
+</html>
